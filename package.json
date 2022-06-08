@@ -1,6 +1,6 @@
 {
   "name": "@shoppe/app-header",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "scripts": {
     "start": "webpack serve --port 8100",
     "start:standalone": "webpack serve --env standalone",
@@ -14,7 +14,8 @@
     "watch-tests": "cross-env BABEL_ENV=test jest --watch",
     "coverage": "cross-env BABEL_ENV=test jest --coverage",
     "build:types": "tsc",
-    "deploy": "export TESTE=test; echo $TESTE"
+    "deploy": "sh deploy-single-microfrontend.sh",
+    "show": "sh deploy-single-microfrontend.sh"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
