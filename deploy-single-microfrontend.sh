@@ -13,7 +13,7 @@ aws s3 cp dist s3://mfe-shoppe/config/mfe/app-header/$VERSION --recursive
 echo "Import Map before deployment:"
 cat ./import-map.json
 
-NEW_URL=https://shoppe.cactoit.com/config/mfe/app-header/$VERSION/shoppe-app-header.js
+NEW_URL=/config/mfe/app-header/$VERSION/shoppe-app-header.js
 
 # Modify the import map
 cat ./import-map.json | ./jq --arg NEW_URL "$NEW_URL" '.imports["@shoppe/app-header"] = $NEW_URL' > new.importmap.json
