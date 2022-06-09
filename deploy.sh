@@ -13,6 +13,9 @@ NEW_URL=/config/mfe/app-header/$VERSION/shoppe-app-header.js
 # MODIFY import-map.json
 cat ./import-map.json | ./jq --arg NEW_URL "$NEW_URL" '.imports["@shoppe/app-header"] = $NEW_URL' > new.importmap.json
 
+# UPLOAD build
+aws s3 cp dist s3://mfe-shoppe/config/mfe/app-header/$VERSION --recursive
+
 # UPLOAD new importmap
 aws s3 cp new.importmap.json s3://mfe-shoppe/config/import-map.json
 
