@@ -1,6 +1,6 @@
 {
   "name": "@shoppe/app-header",
-  "version": "4.0.1",
+  "version": "1.0.0",
   "scripts": {
     "start": "webpack serve --port 8100",
     "start:standalone": "webpack serve --env standalone",

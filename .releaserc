@@ -1,7 +1,7 @@
 {
   "branches": [
     "main",
-    "test",
+    "test_2",
     "init"
   ],
   "plugins": [
