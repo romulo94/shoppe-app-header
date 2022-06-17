@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/romulo94/shoppe-app-header/compare/v1.0.0...v1.0.1) (2022-06-17)
+
+
+### Bug Fixes
+
+* removing space ([d6445fc](https://github.com/romulo94/shoppe-app-header/commit/d6445fc93930b2c64c9586574d273e535171287e))
+
 # 1.0.0 (2022-06-17)
 
 
