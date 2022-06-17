@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/romulo94/shoppe-app-header/compare/v1.0.0...v1.1.0) (2022-06-17)
+
+
+### Features
+
+* muito legal ([8743918](https://github.com/romulo94/shoppe-app-header/commit/874391813c1513ad1abd2d13cd74559c5a0d2f79))
+
 # 1.0.0 (2022-06-17)
 
 
