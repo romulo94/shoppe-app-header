@@ -20,6 +20,8 @@ jobs:
         run: yarn build
       - name: Bump version
         run: yarn semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       - name: Set AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
