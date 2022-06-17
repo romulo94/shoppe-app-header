@@ -3,7 +3,7 @@ name: Deploy MFE @shoppe/app-header
 on:
   push:
     branches:
-      - "init"
+      - "test"
 
 jobs:
   build:
@@ -18,6 +18,8 @@ jobs:
         run: yarn install
       - name: Build app
         run: yarn build
+      - name: Bump version
+        run: yarn semantic-release
       - name: Set AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
