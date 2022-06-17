@@ -1,5 +1,6 @@
 {
-  "branch": [
+  "branches": [
+    "main",
     "test"
   ],
   "plugins": [
@@ -25,5 +26,6 @@
       }
     ],
     "@semantic-release/github"
-  ]
+  ],
+  "ci": false
 }
